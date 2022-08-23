@@ -17,7 +17,7 @@ namespace LightstripSyncClient
 
         public ObservableCollection<BluetoothLEDevice­> Devices { get; private set; } = new ObservableCollection<BluetoothLEDevice>();
         public BluetoothLEDevice lightStrip;
-        private bool isRGBIC = false;
+        private bool isRGBIC = true;
         private GattCharacteristic lightChar;
         private bool charFound = false;
 
@@ -65,7 +65,7 @@ namespace LightstripSyncClient
             var bluetoothLEDevice = await BluetoothLEDevice.FromIdAsync(deviceInformation.Id);
 
             var deviceName = bluetoothLEDevice.Name;
-            return deviceName.Substring(0, 4) == "ihom" ? bluetoothLEDevice : null;
+            return deviceName.Substring(0, 3) == "GBK" ? bluetoothLEDevice : null;
         }
 
         public async Task<bool> InitiateConnection(BluetoothLEDevice device)
@@ -219,7 +219,7 @@ namespace LightstripSyncClient
 
         public bool checkRGBIC()
         {
-            return lightStrip.Name.Contains("ihoment_H6143");
+            return lightStrip.Name.Contains("GBK_H6147");
         }
 
 
