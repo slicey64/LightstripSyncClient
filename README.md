@@ -10,6 +10,8 @@ Thanks to BeauJBurroughs https://github.com/BeauJBurroughs/Govee-H6127-Reverse-E
 ### Current confirmed working models are 
 H6141,  H6181, H6143
 
+### Maybe working???
+H6147
 
 If you have a different model from above, try testing it out and let me know if it works. From what I can tell, most Govee lights use the same UUIDs for BLE connections, so it should all work.
 
