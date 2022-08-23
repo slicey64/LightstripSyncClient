@@ -14,7 +14,7 @@ H6141,  H6181, H6143
 If you have a different model from above, try testing it out and let me know if it works. From what I can tell, most Govee lights use the same UUIDs for BLE connections, so it should all work.
 
 ### How to use
-Run the .exe in the release file, and the select your lightstrip device and click connect. The device name should start with "ihoment".
+Run the .exe in the release file, and the select your lightstrip device and click connect. The device name should start with "ihoment" or "GBK".
 
 ### Bugs
 Sometimes the app fails to connect properly. If this happens, just relaunch the app. Also sometime it will lose connection if you don't change the lights for a while, so again, just relaunch. This shouldn't happen in sync mode though.
